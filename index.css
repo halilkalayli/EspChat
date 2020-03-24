@@ -1,0 +1,157 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    font-family: arial;
+    background-color: #369;
+    height: 100%;
+    margin: 0;
+}
+.hidden {
+    display: none;
+}
+.mobile-container {
+    display: flex;
+    flex-direction: column;
+    height: calc(100%);
+}
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    grid-template-rows: auto auto 1fr auto auto;
+    height: 100%;
+    min-height: 100vh;
+}
+header {
+    grid-column: span 2;
+    grid-row: 1;
+    padding: 5px 5px 5px 5px;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgb(51, 102, 153);
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.navbar {
+    grid-column: span 2;
+    grid-row: 2;
+    padding: 5px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #369;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main {
+    background-color: rgb(255, 255, 255);
+    overflow: auto;
+    display: flex;
+    flex-direction:column;
+    float: left;
+    flex: 1;
+    padding: 10px;
+    grid-row: 3;
+    grid-column: 2;
+    align-items:flex-start;
+    max-height: 100%;
+}
+main > div {
+    background-color: rgb(207, 207, 207);
+    margin: 10px;
+    padding: 10px 10px 5px 10px;
+    max-width: 40%;
+    word-wrap: break-word;
+    text-align: left;
+}
+.msg {
+    grid-row: 4;
+    grid-column: 2;
+    background-color: rgb(36, 74, 112);
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+nav {
+    grid-row: 3 / 5;
+    grid-column: 1;
+    background-color: rgb(50, 122, 194);
+    padding: 5px 5px 5px 5px;
+    word-wrap: break-word;
+}
+footer {
+    grid-column: span 3;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.4em;
+    background-color: #369;
+    color: white;
+    min-height: 5vh;
+    max-height: 5vh;
+}
+.button {
+    background-color:rgb(57, 118, 180);
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px;
+}
+.button:hover {
+    background-color:rgb(43, 90, 136);
+    color: rgb(207, 207, 207);
+}
+.loginform {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #369;
+}
+.child {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    width: 400px;
+    background-color: rgb(43, 109, 175);
+    vertical-align: middle;
+    text-align: center;
+    justify-content:space-evenly;
+    align-items: center;
+}
+.child > div {
+    vertical-align: middle;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+ul{
+    list-style: disc;
+    text-align: left;
+    margin: 20px;
+    padding: 0px;
+}
+p {
+    text-align: left;
+}
+.leftaligned {
+    align-self: flex-start;
+}
+.rightaligned {
+    align-self: flex-end;
+}
+.timestamp {
+    font-size: 10px;
+    text-align: right;
+}
