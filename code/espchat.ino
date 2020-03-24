@@ -7,8 +7,8 @@
 #include <FS.h>
 
 //SSID and Password of your WiFi router
-const char* ssid     = "Nokia 8";
-const char* password = "12345678eert";
+const char* ssid     = "";
+const char* password = "";
 
 ESP8266WebServer server(80); //Server on port 80
 WebSocketsServer webSocket = WebSocketsServer(81);  //websocket server on port 81
